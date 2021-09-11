@@ -163,7 +163,7 @@ Now create a file recovery.conf in your PGDATA directory.
 Note - the recovery.conf is removed in version 12 onwards, for information see [this](https://www.postgresql.org/docs/12/release-12.html
 ```
 standby_mode          = 'on'
-primary_conninfo      = 'host=172.17.0.2 port=5432 user=replicate password=MySuperPassword'
+primary_conninfo      = 'host=172.17.0.2 port=5432 user=replica password=MySuperPassword'
 trigger_file = '/tmp/MasterNow'
 ```
 
@@ -195,7 +195,7 @@ datid            |
 datname          | 
 pid              | 9134
 usesysid         | 16384
-usename          | replicate
+usename          | replica
 application_name | walreceiver
 client_addr      | 172.17.0.3
 client_hostname  | 
