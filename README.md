@@ -187,9 +187,9 @@ Start the postgresql server
 2018-03-11 19:08:56.071 UTC [8794] LOG:  started streaming WAL from primary at 0/5000000 on timeline 1
 ```
 
-You can see the replicate user on the master server :
+You can see the replica user on the master server :
 ```
-postgres=# select * from pg_stat_activity  where usename = 'replicate' ;
+postgres=# select * from pg_stat_activity  where usename = 'replica' ;
 -[ RECORD 1 ]----+------------------------------
 datid            | 
 datname          | 
